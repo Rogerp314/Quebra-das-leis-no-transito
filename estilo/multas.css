@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Bebas';
+    src: url('../fontes/BebasNeue-Regular.ttf') format('truetype');
+}
+
+:root{
+    --fonte-de-destaque: 'Bebas';
+
+    --cor-dos-botoes: blue;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: lightgray;
+    background-image: url('../imagens/imagem02.png');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header{
+    margin: 40px;
+}
+h1{
+    text-align: center;
+    font-family: var(--fonte-de-destaque), sans-serif;
+    font-size: 4em;
+    font-variant: small-caps;
+}
+header>p{
+    text-align: center;
+    text-decoration: underline;
+    font: normal normal 1.5em var(--fonte-de-destaque), sans-serif;
+}
+header>nav{
+    text-align: center;
+}
+#menu{
+    margin: 25px;
+}
+#menu>a{
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    font: normal bolder 1.3em Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#menu>a:hover{
+    box-shadow: 1px 2px 4px #0000006c;
+}
+#menu>a:active{
+    box-shadow: inset 1px 2px 4px #0000006c;
+}
+table{
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    border-collapse: collapse;
+}
+caption{
+    background-color: green;
+    padding: 10px;
+    border: 1px solid black;
+    font-family: var(--fonte-de-destaque);
+    font-size: 1.75em;
+    font-variant: small-caps;
+}
+th,td{
+    border: 1px solid black;
+    padding: 7px;
+}
+th{
+    text-align: left;
+}
+td{
+    font-weight: bold;
+    text-align: right;
+}
+main{
+    background-color: white;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: inset 2px 3px 3px rgba(0, 0, 0, 0.283);
+}
+article>h2{
+    text-align: center;
+    font: normal bold 2em var(--fonte-de-destaque), sans-serif;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.265);
+}
+article>p{
+    padding: 10px;
+}
+h3{
+    text-align: center;
+    padding: 10px;
+}
+.formulario{
+    width: 500px;
+    height: 25px;
+    margin: auto;
+    text-indent: 7px;
+    border: 2px solid black;
+}
+#resultado{
+    background-color: blue;
+    color: white;
+    font: normal bold 1.3em Arial, sans-serif;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+#resultado:hover{
+    box-shadow: 1px 2px 4px #0000006c;
+}
+#resultado:active{
+    box-shadow: inset 1px 2px 4px #0000006c;
+}
+#res{
+    font: normal bold 1.5em var(--fonte-de-destaque);
+}
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 510px){
+    header{
+        color: white;
+    }
+    .formulario{
+        width: 400px;
+    }
+}
